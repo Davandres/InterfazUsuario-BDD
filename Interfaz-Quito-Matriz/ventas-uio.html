@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedes | DB Distribuidas UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dash: {
+                            bg: '#0F1219',
+                            card: '#161925',
+                            purple: '#8B5CF6',
+                            blue: '#3B82F6',
+                            green: '#10B981',
+                            red: '#EF4444',
+                            textPrimary: '#FFFFFF',
+                            textSecondary: '#9CA3AF',
+                            border: '#2A2D3A',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dash-bg text-dash-textPrimary h-screen flex overflow-hidden font-sans">
+
+    <aside class="w-72 bg-dash-card border-r border-dash-border hidden md:flex flex-col h-full overflow-y-auto">
+        <div class="p-6 sticky top-0 bg-dash-card z-10 border-b border-dash-border/50">
+            <h1 class="text-xl font-bold flex items-center gap-3">
+                <div class="w-8 h-8 bg-dash-purple rounded flex items-center justify-center text-sm font-bold">DB</div>
+                Distributed Admin
+            </h1>
+        </div>
+        
+        <nav class="flex-1 px-4 py-4 space-y-1 text-sm">
+            
+            <a href="index.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span>🏢</span> Sedes (Maestro)
+            </a>
+
+            <div class="pt-2 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">CLIENTES</div>
+            <a href="cliente-dato.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Cliente Dato
+            </a>
+            <a href="cliente-contacto.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Cliente Contacto
+            </a>
+            <div class="px-4 py-2 text-dash-textSecondary flex items-center gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Cliente Detalle
+            </div>
+            <div class="pl-10 space-y-1">
+                <a href="cliente-detalle-uio.html" class="block py-1.5 text-dash-textSecondary hover:text-dash-blue transition-colors">• Quito (UIO)</a>
+                <a href="cliente-detalle-gye.html" class="block py-1.5 text-dash-textSecondary hover:text-dash-blue transition-colors">• Guayaquil (GYE)</a>
+            </div>
+
+            <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">CATÁLOGO</div>
+            <a href="electrodomesticos.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span>💻</span> Electrodomésticos
+            </a>
+
+            <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">INVENTARIO</div>
+            <a href="inventario-global.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Global (Maestro)
+            </a>
+            <a href="inventario-uio.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Inventario Quito
+            </a>
+            <a href="inventario-gye.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Inventario Guayaquil
+            </a>
+
+            <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">VENTAS</div>
+            <a href="ventas-global.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Ventas Globales
+            </a>
+            <a href="ventas-uio.html" class="flex items-center gap-3 px-4 py-2.5 bg-dash-purple/10 text-dash-purple rounded-lg border border-dash-purple/20 font-medium transition-all mb-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Venta Quito
+            </a>
+            <a href="ventas-gye.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Venta Guayaquil
+            </a>
+
+            <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">FACTURAS</div>
+            <a href="facturas-total.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Facturas Totales
+            </a>
+            <a href="facturas-uio.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Facturas Quito
+            </a>
+            <a href="facturas-gye.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Facturas Guayaquil
+            </a>
+
+        </nav>
+    </aside>
+
+<main class="flex-1 flex flex-col h-full overflow-y-auto">
+    <header class="p-8 pb-6 flex justify-between items-center border-b border-dash-border/50">
+        <div>
+            <h2 class="text-2xl font-bold flex items-center gap-2">Registro de Ventas <span class="bg-dash-purple/20 text-dash-purple text-xs px-2 py-1 rounded border border-dash-purple/30">UIO</span></h2>
+            <p class="text-dash-textSecondary text-sm mt-1">σ id_sede='UIO' (VENTA)</p>
+        </div>
+        <button onclick="document.getElementById('modal-venta').classList.remove('hidden')" class="bg-dash-purple hover:bg-purple-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+            <span>+</span> Nueva Venta
+        </button>
+    </header>
+    <div class="p-8">
+        <div class="bg-dash-card border border-dash-border rounded-xl p-0 overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="text-dash-textSecondary border-b border-dash-border text-sm bg-dash-bg/50">
+                            <th class="py-4 px-6 font-medium">Num_Factura</th>
+                            <th class="py-4 px-6 font-medium">Fecha Venta</th>
+                            <th class="py-4 px-6 font-medium">Sede</th>
+                            <th class="py-4 px-6 font-medium">Cédula Cliente</th>
+                            <th class="py-4 px-6 font-medium text-right">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-dash-border/50 hover:bg-dash-border/20 transition-colors group">
+                            <td class="py-4 px-6 font-mono text-dash-purple">FAC-U-1001</td>
+                            <td class="py-4 px-6 text-dash-textSecondary">2026-06-27</td>
+                            <td class="py-4 px-6"><span class="text-xs bg-dash-purple/10 text-dash-purple px-2 py-1 rounded">UIO</span></td>
+                            <td class="py-4 px-6 font-mono">1712345678</td>
+                            <td class="py-4 px-6 text-right opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="text-dash-blue hover:text-blue-400 text-xs font-medium mr-3">Editar</button>
+                                <button class="text-dash-red hover:text-red-400 text-xs font-medium">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<div id="modal-venta" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+    <div class="bg-dash-card border border-dash-border rounded-xl w-full max-w-2xl shadow-2xl">
+        <div class="flex justify-between items-center p-6 border-b border-dash-border/50">
+            <h3 class="text-xl font-bold">Generar Nueva Venta</h3>
+            <button onclick="document.getElementById('modal-venta').classList.add('hidden')" class="text-dash-textSecondary hover:text-white text-2xl">&times;</button>
+        </div>
+        
+        <div class="p-6 space-y-6">
+            <div>
+                <h4 class="text-sm font-semibold text-dash-purple uppercase tracking-wider mb-3">1. Datos de Facturación</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-xs text-dash-textSecondary mb-1">Num_Factura</label>
+                        <input type="text" placeholder="FAC-1001" class="w-full bg-dash-bg border border-dash-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-dash-purple font-mono text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-dash-textSecondary mb-1">Id_Sede</label>
+                        <input type="text" value="UIO" readonly class="w-full bg-dash-bg/50 border border-dash-border/50 rounded-lg px-3 py-2 text-dash-textSecondary cursor-not-allowed font-mono text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-dash-textSecondary mb-1">Fecha</label>
+                        <input type="date" class="w-full bg-dash-bg border border-dash-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-dash-purple text-sm [color-scheme:dark]">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-dash-textSecondary mb-1">Cédula Cliente</label>
+                        <input type="text" placeholder="17XXXXXXXX" class="w-full bg-dash-bg border border-dash-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-dash-purple font-mono text-sm">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-dash-border/50">
+
+            <div>
+                <h4 class="text-sm font-semibold text-dash-blue uppercase tracking-wider mb-3">2. Agregar Productos</h4>
+                
+                <div class="flex gap-3 mb-4">
+                    <div class="flex-1">
+                        <label class="block text-xs text-dash-textSecondary mb-1">Cod_electro</label>
+                        <select class="w-full bg-dash-bg border border-dash-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-dash-blue appearance-none text-sm font-mono">
+                            <option>ELEC-001 (Refrigeradora LG)</option>
+                            <option>ELEC-002 (Cocina Indurama)</option>
+                            <option>ELEC-003 (TV Samsung 50")</option>
+                        </select>
+                    </div>
+                    <div class="w-24">
+                        <label class="block text-xs text-dash-textSecondary mb-1">Cantidad</label>
+                        <input type="number" value="1" min="1" class="w-full bg-dash-bg border border-dash-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-dash-blue text-sm">
+                    </div>
+                    <div class="flex items-end">
+                        <button class="bg-dash-blue/20 hover:bg-dash-blue text-dash-blue hover:text-white border border-dash-blue/50 px-4 py-2 rounded-lg text-sm font-medium transition-colors h-[38px]">
+                            Agregar +
+                        </button>
+                    </div>
+                </div>
+
+                <div class="border border-dash-border rounded-lg bg-dash-bg overflow-hidden">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-dash-card border-b border-dash-border text-dash-textSecondary">
+                            <tr>
+                                <th class="px-4 py-2 font-medium">Producto (Cod_electro)</th>
+                                <th class="px-4 py-2 font-medium">Cantidad</th>
+                                <th class="px-4 py-2 font-medium text-right">Quitar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-dash-border/50">
+                                <td class="px-4 py-2 font-mono">ELEC-001</td>
+                                <td class="px-4 py-2">2</td>
+                                <td class="px-4 py-2 text-right">
+                                    <button class="text-dash-red hover:text-red-400 font-bold">&times;</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="p-6 border-t border-dash-border/50 flex justify-end gap-3 bg-dash-bg/50 rounded-b-xl">
+            <button onclick="document.getElementById('modal-venta').classList.add('hidden')" class="px-4 py-2 rounded-lg text-sm font-medium border border-dash-border hover:bg-dash-border/30 transition-colors">Cancelar</button>
+            <button class="px-4 py-2 rounded-lg text-sm font-medium bg-dash-green hover:bg-green-500 text-white transition-colors shadow-lg shadow-dash-green/20">Procesar Venta</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
