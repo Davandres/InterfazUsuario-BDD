@@ -36,14 +36,14 @@
         <div class="p-6 sticky top-0 bg-dash-card z-10 border-b border-dash-border/50">
             <h1 class="text-xl font-bold flex items-center gap-3">
                 <div class="w-8 h-8 bg-dash-purple rounded flex items-center justify-center text-sm font-bold">DB</div>
-                Distributed Admin
+                Admin de ElectroMax
             </h1>
         </div>
         
         <nav class="flex-1 px-4 py-4 space-y-1 text-sm">
             
             <a href="index.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
-                <span>🏢</span> Sedes (Maestro)
+                <span>🏢</span> Sedes
             </a>
 
             <div class="pt-2 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">CLIENTES</div>
@@ -67,9 +67,7 @@
             </a>
 
             <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">INVENTARIO</div>
-            <a href="inventario-global.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
-                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Global (Maestro)
-            </a>
+
             <a href="inventario-uio.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
                 <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Inventario Quito
             </a>
@@ -78,9 +76,7 @@
             </a>
 
             <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">VENTAS</div>
-            <a href="ventas-global.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
-                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Ventas Globales
-            </a>
+
             <a href="ventas-uio.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
                 <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Venta Quito
             </a>
@@ -89,9 +85,7 @@
             </a>
 
             <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">FACTURAS</div>
-            <a href="facturas-total.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
-                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Facturas Totales
-            </a>
+
             <a href="facturas-uio.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
                 <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Facturas Quito
             </a>
@@ -131,6 +125,46 @@
                             <td class="py-4 px-6">Refrigeradora</td>
                             <td class="py-4 px-6 text-dash-textSecondary">Samsung</td>
                             <td class="py-4 px-6 font-bold text-dash-green">$ 850.00</td>
+                            <td class="py-4 px-6 text-right opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="text-dash-blue hover:text-blue-400 text-xs font-medium mr-3">Editar</button>
+                                <button class="text-dash-red hover:text-red-400 text-xs font-medium">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-dash-border/50 hover:bg-dash-border/20 transition-colors group">
+                            <td class="py-4 px-6 font-mono text-dash-purple">TV-002</td>
+                            <td class="py-4 px-6">Televisor</td>
+                            <td class="py-4 px-6 text-dash-textSecondary">LG</td>
+                            <td class="py-4 px-6 font-bold text-dash-green">$ 1,200.00</td>
+                            <td class="py-4 px-6 text-right opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="text-dash-blue hover:text-blue-400 text-xs font-medium mr-3">Editar</button>
+                                <button class="text-dash-red hover:text-red-400 text-xs font-medium">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-dash-border/50 hover:bg-dash-border/20 transition-colors group">
+                            <td class="py-4 px-6 font-mono text-dash-purple">LIC-003</td>
+                            <td class="py-4 px-6">Licuadora</td>
+                            <td class="py-4 px-6 text-dash-textSecondary">Oster</td>
+                            <td class="py-4 px-6 font-bold text-dash-green">$ 50.00</td>
+                            <td class="py-4 px-6 text-right opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="text-dash-blue hover:text-blue-400 text-xs font-medium mr-3">Editar</button>
+                                <button class="text-dash-red hover:text-red-400 text-xs font-medium">Eliminar</button>
+                            </td>
+                        </tr>
+                            <tr class="border-b border-dash-border/50 hover:bg-dash-border/20 transition-colors group">
+                            <td class="py-4 px-6 font-mono text-dash-purple">COC-004</td>
+                            <td class="py-4 px-6">Cocina</td>
+                            <td class="py-4 px-6 text-dash-textSecondary">Mabe</td>
+                            <td class="py-4 px-6 font-bold text-dash-green">$ 350.00</td>
+                            <td class="py-4 px-6 text-right opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button class="text-dash-blue hover:text-blue-400 text-xs font-medium mr-3">Editar</button>
+                                <button class="text-dash-red hover:text-red-400 text-xs font-medium">Eliminar</button>
+                            </td>
+                        </tr>
+                            <tr class="border-b border-dash-border/50 hover:bg-dash-border/20 transition-colors group">
+                            <td class="py-4 px-6 font-mono text-dash-purple">BAT-005</td>
+                            <td class="py-4 px-6">Batidora</td>
+                            <td class="py-4 px-6 text-dash-textSecondary">Oster</td>
+                            <td class="py-4 px-6 font-bold text-dash-green">$ 20.00</td>
                             <td class="py-4 px-6 text-right opacity-0 group-hover:opacity-100 transition-opacity">
                                 <button class="text-dash-blue hover:text-blue-400 text-xs font-medium mr-3">Editar</button>
                                 <button class="text-dash-red hover:text-red-400 text-xs font-medium">Eliminar</button>
