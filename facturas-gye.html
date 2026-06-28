@@ -67,9 +67,7 @@
             </a>
 
             <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">INVENTARIO</div>
-            <a href="inventario-global.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
-                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Global (Maestro)
-            </a>
+
             <a href="inventario-uio.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
                 <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Inventario Quito
             </a>
@@ -78,9 +76,7 @@
             </a>
 
             <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">VENTAS</div>
-            <a href="ventas-global.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
-                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Ventas Globales
-            </a>
+
             <a href="ventas-uio.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
                 <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Venta Quito
             </a>
@@ -89,9 +85,7 @@
             </a>
 
             <div class="pt-4 pb-1 px-4 text-xs font-semibold text-dash-textSecondary tracking-wider">FACTURAS</div>
-            <a href="facturas-total.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
-                <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Facturas Totales
-            </a>
+
             <a href="facturas-uio.html" class="flex items-center gap-3 px-4 py-2 text-dash-textSecondary hover:text-white transition-colors">
                 <span class="w-1.5 h-1.5 rounded-full bg-dash-border"></span> Facturas Quito
             </a>
@@ -106,7 +100,7 @@
     <header class="p-8 pb-6 flex justify-between items-center border-b border-dash-border/50">
         <div>
             <h2 class="text-2xl font-bold flex items-center gap-2">Detalle de Facturas <span class="bg-dash-purple/20 text-dash-purple text-xs px-2 py-1 rounded border border-dash-purple/30">GYE</span></h2>
-            <p class="text-dash-textSecondary text-sm mt-1">DETALLE_VENTA ⋉ VENTA_GYE</p>
+            <p class="text-dash-textSecondary text-sm mt-1">DETALLE_VENTA ⋉ VENTA_GYE </p>
         </div>
     </header>
     <div class="p-8">
@@ -115,21 +109,34 @@
                 <table class="w-full text-left border-collapse">
                     <thead>
                         <tr class="text-dash-textSecondary border-b border-dash-border text-sm bg-dash-bg/50">
-                            <th class="py-4 px-6 font-medium">Num_Factura (FK)</th>
+                            <th class="py-4 px-6 font-medium">Num_Factura</th>
                             <th class="py-4 px-6 font-medium">Cod_electro</th>
-                            <th class="py-4 px-6 font-medium">Cantidad</th>
-                            <th class="py-4 px-6 font-medium text-right">Acciones</th>
+                            <th class="py-4 px-6 font-medium text-center">Cantidad</th>
+                            <th class="py-4 px-6 font-medium text-right">Precio Unitario</th>
+                            <th class="py-4 px-6 font-medium text-right">Total Ítem</th>
                         </tr>
                     </thead>
                     <tbody class="text-sm">
-                        <tr class="border-b border-dash-border/50 hover:bg-dash-border/20 transition-colors group">
-                            <td class="py-4 px-6 font-mono text-dash-purple">FAC-U-1001</td>
-                            <td class="py-4 px-6 font-mono text-dash-textSecondary">ELEC-001</td>
-                            <td class="py-4 px-6 font-bold">2</td>
-                            <td class="py-4 px-6 text-right opacity-0 group-hover:opacity-100 transition-opacity">
-                                <button class="text-dash-blue hover:text-blue-400 text-xs font-medium mr-3">Editar</button>
-                                <button class="text-dash-red hover:text-red-400 text-xs font-medium">Eliminar</button>
-                            </td>
+                        <tr class="border-b border-dash-border/50 hover:bg-dash-border/20 transition-colors">
+                            <td class="py-4 px-6 font-mono text-dash-purple">FAC-G-1002</td>
+                            <td class="py-4 px-6 font-mono text-dash-textSecondary">TV-002 (Televisor LG)</td>
+                            <td class="py-4 px-6 text-center font-bold">2</td>
+                            <td class="py-4 px-6 text-right font-mono text-dash-textSecondary">$ 1,200.00</td>
+                            <td class="py-4 px-6 text-right font-mono text-white">$ 2,400.00</td>
+                        </tr>
+                        <tr class="border-b border-dash-border/50 hover:bg-dash-border/20 transition-colors">
+                            <td class="py-4 px-6 font-mono text-dash-purple">FAC-G-1004</td>
+                            <td class="py-4 px-6 font-mono text-dash-textSecondary">COC-004 (Cocina Mabe)</td>
+                            <td class="py-4 px-6 text-center font-bold">1</td>
+                            <td class="py-4 px-6 text-right font-mono text-dash-textSecondary">$ 350.00</td>
+                            <td class="py-4 px-6 text-right font-mono text-white">$ 350.00</td>
+                        </tr>
+                        <tr class="border-b border-dash-border/50 hover:bg-dash-border/20 transition-colors">
+                            <td class="py-4 px-6 font-mono text-dash-purple">FAC-G-1006</td>
+                            <td class="py-4 px-6 font-mono text-dash-textSecondary">COC-004 (Cocina Mabe)</td>
+                            <td class="py-4 px-6 text-center font-bold">2</td>
+                            <td class="py-4 px-6 text-right font-mono text-dash-textSecondary">$ 350.00</td>
+                            <td class="py-4 px-6 text-right font-mono text-white">$ 700.00</td>
                         </tr>
                     </tbody>
                 </table>
